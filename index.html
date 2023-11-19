@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my_portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/ravilogo.jpg" class="logo">
+                <ul>
+                    <li class="link"><a href="#header">Home</a></li>
+                    <li class="link"><a href="#about">About</a></li>
+                    <li class="link"><a href="#services">Projects</a></li>
+                    <li class="link"><a href="#portfolio">Profiles</a></li>
+                    <li class="link"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I am <span class="link">Ravi Nandan Ray.</span> I work on C++ development and MERN web development.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title link">About me</h1>
+                    <p>Having hands on experience in C++ programming and data structures, 
+                        familiar with different aspects of programming like OOPs, Git and Github etc. 
+                        I have worked on various MERN stack web development projects. 
+                        Looking for a position in the field of software development,
+                        where I can apply my knowledge and talent to learn and grow more, 
+                        along with the the organization which I work for.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>PROGRAMMING LANGUAGES</span><br>C • C++ • JS</li>
+                            <li><span>WEB DEV TECHNOLOGIES</span><br>HTML5 • CSS • Node.JS • React.JS •
+                                Express.JS • BootStrap</li>
+                            <li><span>DATABASES</span><br>NO-SQL • SQL • Mongo.DB</li>
+                            <li><span>COURSE WORK</span><br>DBMS • OS • Computer Networks •
+                                OOPs Concepts • Git and Github</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Capgemini</span><br>Software Engineer(Full Time)-(AUG,2022-Present)<br>Working with Cloud Infrastructure Use Case Development team. In developing logic
+                                for detection of cyber security threats for various cloud platforms such as AWS,
+                                Azure, GCP, etc. Also, worked on MITRE Attack tactics and techniques.</li>
+                            <li><span>Coding Ninjas (Ed.Tech)</span><br>Software Engineer(Full Time)-(AUG,2022-Present)<br>Working with Cloud Infrastructure Use Case Development team. In developing logic
+                                for detection of cyber security threats for various cloud platforms such as AWS,
+                                Azure, GCP, etc. Also, worked on MITRE Attack tactics and techniques.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Delhi Technological University (Formerly DCE)</span><br>M.Tech(Electrical Engineering)<br>CGPA-7.93</li>
+                            <li><span>Gujarat Technological University</span><br>B.E(Electrical Engineering)<br>CGPA-7.94</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <h1>Web Dev Projects</h1>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Mongo.DB</li>
+                        <li>Node.JS</li>
+                        <li>Express.JS</li>
+                    </ul>
+                    <!-- <p>Created using HTML5, CSS, JS, mongo.DB, Node.js (ES6), Express.js</p> -->
+                    <a href="#"><i class="fa-solid fa-diamond-turn-right"></i></a>
+                </div>
+                <div>
+                    <h1>C++ Projects</h1>
+                    <ul>
+                        <li>SuperMarket Biling System</li>
+                        <li>Snake Game C++</li>
+                    </ul>
+                    <a href="#"><i class="fa-solid fa-diamond-turn-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Profiles</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <h2>GeeksforGeeks</h2>
+                    <div class="layer">
+                        <h3>GeeksforGeeks</h3>
+                        <p>Solved around 450+ DSA probems on GFG platform.</p>
+                        <a href="https://auth.geeksforgeeks.org/user/ravinandanray99"><i class="fa-solid fa-diamond-turn-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <h2>Leetcode</h2>
+                    <div class="layer">
+                        <h3>Leetcode</h3>
+                        <p>Solved around 520+ DSA probems on LeetCode platform. Earned 100 Days as well as Data Structure - 1 badges.</p>
+                        <a href="https://leetcode.com/ravinandanray/"><i class="fa-solid fa-diamond-turn-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <h2>Hackerrank</h2>
+                    <div class="layer">
+                        <h3>Hackerrank</h3>
+                        <p>5 star in problem solving and C++. Also have Problem solving (Basic) certificate.</p>
+                        <a href="https://www.hackerrank.com/profile/ravinandanray99"><i class="fa-solid fa-diamond-turn-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <h2>Github</h2>
+                    <div class="layer">
+                        <h3>Github</h3>
+                        <p>All my project repositories are available here.</p>
+                        <a href="https://github.com/Rajaravi99"><i class="fa-solid fa-diamond-turn-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <h2>linkedin</h2>
+                    <div class="layer">
+                        <h3>linkedin</h3>
+                        <p>Have a look on my linkedin Corporate profile.</p>
+                        <a href="https://www.linkedin.com/in/ravi-nandan-ray-605465163/"><i class="fa-solid fa-diamond-turn-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-share-from-square"></i>  ravinandanray99@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone-volume"></i>+91-7600486822</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ravinandan.ray/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/RaviNandanray1"><i class="fa-brands fa-x-twitter"></i></i></a>
+                        <a href="https://www.instagram.com/ravinray_99/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ravi-nandan-ray-605465163/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Ravi Nandan Ray_DTU_Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Created and copyright @ Ravi Nandan Ray</p>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/9d517f31da.js" crossorigin="anonymous"></script>
+</body>
+</html>
