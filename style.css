@@ -23,7 +23,7 @@ html{
 }
 body{
     background-color: rgb(59, 13, 13);
-    color: rgb(249, 245, 245);
+    color: #89dbf5;
 }
 #header{
     width: 100%;
@@ -253,8 +253,7 @@ nav ul li a:hover{
     border-color: #07f33e;
 }
 .services-list div a{
-    color: #f30707;
-    font-size: 50px;
+    font-size: 20px;
 }
 /* My profile */
 .portfolio{
@@ -305,13 +304,15 @@ nav ul li a:hover{
     flex-direction: column;
     padding: 0 20px;
     text-align: center;
+    color: #89dbf5;
     transition: height 0.5s, background 0.5s;
 }
 .layer p{
     font-size: 15px;
 }
 .layer a{
-    font-size: 40px;
+    padding-top: 20px;
+    font-size: 20px;
 }
 .layer:hover{
     height: 100%;
