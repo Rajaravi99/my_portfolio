@@ -41,7 +41,7 @@ body{
     width: 4cm;
 }
 ul{
-    padding-left: 10cm;
+    padding-left: 6cm;
     list-style-type: none;
 }
 nav{
@@ -197,6 +197,25 @@ nav ul li a:hover{
 .tab-contents.active-tab{
     display: block;
 }
+.link1{
+    position: relative;
+}
+.link1::after{
+    content: '';
+    position: absolute;
+    width: 0; height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: rgb(53, 219, 94);
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+}
+.link1:hover:after{
+    width: 28%;
+    left: 0;
+    background: #f04208;
+}
 /* My Projects */
 .container h1{
     font-size: 40px;
@@ -287,6 +306,9 @@ nav ul li a:hover{
     padding: 0 20px;
     text-align: center;
     transition: height 0.5s, background 0.5s;
+}
+.layer p{
+    font-size: 15px;
 }
 .layer a{
     font-size: 40px;
@@ -382,4 +404,7 @@ form textarea:hover{
     margin-top: 20px;
     background: #ae8d88;
     font-size: 20px;
+}
+/* css for small screen */
+@media only screen and (max-width: 600px){
 }
