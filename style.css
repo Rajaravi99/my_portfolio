@@ -154,6 +154,7 @@ nav ul li a:hover{
 .sub-title{
     font-size: 30px;
     font-weight: 600;
+    text-align: center;
     color: rgb(237, 211, 11);
 }
 .tab-titles{
@@ -322,6 +323,7 @@ nav ul li a:hover{
     font-size: 15px;
 }
 .layer a{
+    align-content: center;
     padding-top: 20px;
     font-size: 20px;
 }
@@ -403,9 +405,6 @@ form textarea:hover{
 .title{
     color: yellow;
 }
-.sub-title{
-    text-align: center;
-}
 .btn2{
     background: rgb(61, 18, 18);
 }
@@ -422,6 +421,22 @@ form textarea:hover{
     transform: scale(1.1);
 }
 /* popup */
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background: rgb(168, 70, 70);
+    opacity: 0;
+    animation: popup .5s 5s ease forwards;
+}
+@keyframes popup {
+    from {opacity: 0; }
+    to{opacity: 1; }
+}
+
 .lightbox {
     position: fixed;
     top: 0;
@@ -439,14 +454,20 @@ form textarea:hover{
 .closeLB {
     color: rgb(15, 14, 14);
     cursor: pointer;
+    font-size: 30px;
+    transition: color 0.5s;
+}
+.closeLB:hover{
+    color: rgb(0, 4, 255);
 }
 .lightbox .iframeContainer {
+    height: 50vh;
     vertical-align: middle;
     background: #e53a3a;
-    border-style: dashed;
+    border-style: solid;
     border-width: 5px;
     border-radius: 30px;
-    border-color: #e7f307;
+    border-color: #0b0b0b;
     text-align: center;
 }
 .lightbox.closed {
@@ -456,13 +477,34 @@ form textarea:hover{
     transition: opacity 0.7s;
 }
 .iframeContainer p{
-    color: rgb(16, 14, 14);
+    color: rgb(11, 9, 9);
 }
 .welcome{
     padding-top: 2vh;
     font-size: 3em;
     font-weight: 1000;
     font-style: italic;
+}
+/* hover popup */
+.tooltip span{
+    position: relative;
+    top: 8px;
+    width: 2vw; 
+    border: #000 2px double;
+    border-radius: 20px;
+    background: #74ed61;
+    padding: 10px;
+    z-index: 1000000;
+    display: inline;
+    opacity: 0;
+    transition: 0.5s all;
+}
+.tooltip:hover span{
+    outline: none;
+    text-decoration: none;
+    font-size: 70%;
+    color: #000;
+    opacity: 0.8;
 }
 /* css for small screen */
 @media only screen and (max-width: 630px){
