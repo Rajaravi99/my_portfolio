@@ -17,7 +17,11 @@ let userName = document.getElementById('Name').value;
 let phone = document.getElementById('Number').value;
 let email = document.getElementById('Email').value;
 let message = document.getElementById('Message').value;
-let messageBody = "Name " + userName + "<br/> Phone " + phone + "<br/> Email " + email;
+let messageBody = "Name " + userName + "<br/> Phone " + phone + "<br/> Email " + email + "<br/> Message" + message;
+console.log(userName);
+console.log(phone);
+console.log(email);
+console.log(message);
 console.log(messageBody);
 function collectData(){
     Email.send({
