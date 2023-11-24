@@ -191,10 +191,11 @@
                 </div>
                 <div class="contact-right">
                     <h1 class="title link">Any Message For Me?</h1>
-                    <form action="">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="text" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <form onsubmit="collectData(); reset(); return false;">
+                        <input type="text" id="Name" placeholder="Your Name" required>
+                        <input type="text" id="Email" placeholder="Your Email" required>
+                        <input type="number" id="Number" placeholder="Your Contact Number" required>
+                        <textarea id="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
                 </div>
@@ -206,17 +207,19 @@
         <p>Created and Copyright @ Ravi Nandan Ray</p>
     </div>
     <!-- popup -->
-    <div class="lightbox">
+    <!-- <div class="lightbox">
         <div class="iframeContainer">
             <div class="toolbarLB">
                 <span class="closeLB" onclick="lightBoxClose()"><i class="fa-solid fa-xmark"></i></span>
             </div>
-          <p>Not Optimized for Smartphones Yet</p>
-          <p>If opened on any other device, please close popup</p>
-          <p class="welcome">WELCOME!!</p>
-          <iframe width="800vw" height="100vh" frameborder="0"></iframe>
+            <p>Not Optimized for Smartphones Yet</p>
+            <p>If opened on any other device, please close popup</p>
+            <p class="welcome">WELCOME!!</p>
+            <iframe width="800vw" height="100vh" frameborder="0"></iframe>
         </div>
-      </div>
+    </div> -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/9d517f31da.js" crossorigin="anonymous"></script>
 </body>
