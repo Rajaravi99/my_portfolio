@@ -15,35 +15,13 @@ html{
     justify-content: center;
     position: relative;
     margin: 3vh 0;
-    border-radius: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     letter-spacing: 2px;
-    transition: 1s box-shadow;
-}
-#header:hover {
-    box-shadow: 0 5px 35px 0px yellow;
-}
-#header:hover::after {
-    display: block;
-    content: '';
-    position: absolute;
-    width: 1400px;
-    height: 250px;
-    border-radius: 20px;
-    z-index: -1;
-    animation: 1s clockwise infinite;
-  }
-  
-#header:hover:after {
-    animation: 2s counterclockwise infinite;
 }
 body{
-    background-color: rgb(61, 18, 18);
-    color: #89dbf5;
-}
-.container{
-    margin: 1vw 2vh;
+    background-color: rgb(40, 53, 69);
+    color: #9ae0f5;
 }
 .logo{
     margin-left: 15px;
@@ -51,13 +29,16 @@ body{
     width: 4cm;
 }
 ul{
-    padding-left: 20vw;
+    padding-left: 31vw;
     list-style-type: none;
 }
 nav{
+    background: #07711f;
     display: inline-flex;
-    padding-top: 0%;
-    border-radius: 20px;
+    border-style: ridge;
+    border-radius: 10px;
+    border-color: #74ed61;
+    border-width: 5px;
 }
 nav ul{
     display: inline-flex;
@@ -74,7 +55,7 @@ nav ul li a{
 }
 nav ul li a:hover{
     text-size-adjust: 50px;
-    color: #5207f3;
+    color: #ab8af3;
     cursor: pointer;
 }
 .header-text{
@@ -130,8 +111,8 @@ nav ul li a:hover{
     width: 90vw;
     height: 75vh;
     border: #f32a07;
-    border-style: double;
-    border-width: 10px;
+    border-style: groove;
+    border-width: 20px;
 }
 .about-col-1{
     flex-basis: 40%;
@@ -155,10 +136,10 @@ nav ul li a:hover{
     font-size: 30px;
     font-weight: 600;
     text-align: center;
-    color: rgb(237, 211, 11);
+    color: rgb(237, 237, 11);
 }
 .tab-titles{
-    color: yellow;
+    color: rgb(229, 255, 0);
     display: flex;
     margin: 20px 0 20px;
 }
@@ -169,12 +150,14 @@ nav ul li a:hover{
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    font-size: 2em;
+    font-weight: bold;
 }
 .tab-links::after{
     content: '';
     width: 0;
-    height: 3px;
-    background-color: rgb(224, 13, 147);
+    height: 5px;
+    background-color: rgb(243, 4, 155);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -191,8 +174,8 @@ nav ul li a:hover{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: rgb(207, 239, 27);
-    font-size: 20px;
+    color: rgb(27, 239, 38);
+    font-size: 1em;
 }
 .tab-contents{
     display: none;
@@ -249,10 +232,10 @@ nav ul li a:hover{
 }
 .services-list div{
     padding: 40px;
-    border-style: double;
+    border-style: ridge;
     border-width: 10px;
     border-color: red;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
 .services-list div:hover{
@@ -282,10 +265,10 @@ nav ul li a:hover{
     border-radius: 20px;
     position: relative;
     overflow: hidden;
-    border-style: double;
+    border-style: ridge;
     border-width: 10px;
     border-color: rgb(235, 31, 31);
-    border-radius: 20px;
+    border-radius: 10px;
     transition: transform 0.5s, border-color 0.5s;
 }
 .work:hover{
@@ -347,9 +330,6 @@ nav ul li a:hover{
 .contact-right{
     flex-basis: 55%;
     padding-left: 2.5vh;
-}
-.contact-right h1{
-    padding-top: 2vh;
 }
 .contact-left p{
     margin-top: 20px;
