@@ -243,7 +243,8 @@ nav ul li a:hover{
     transition: background 0.5s, transform 0.5s;
 }
 .services-list div:hover{
-    background-color: rgb(66, 64, 64);
+    background: linear-gradient(to right, rgb(71, 69, 73) 50%, rgb(20, 20, 21) 80%) right;
+    background-size: 200% 100%;
     transform: scale(1.1);
     border-color: #07f33e;
 }
