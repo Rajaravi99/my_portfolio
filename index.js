@@ -10,11 +10,11 @@ function  openTab(tabName){
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabName).classList.add("active-tab");
 }
-
+// popup on pageload
 lightBoxClose = function() {
     document.querySelector(".lightbox").classList.add("closed");
 }
-
+// data collection when form is submitted
 function collectData(){
     let userName = document.getElementById('Name').value;
     let phone = document.getElementById('Number').value;
