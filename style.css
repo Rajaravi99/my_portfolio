@@ -20,8 +20,9 @@ html{
     letter-spacing: 2px;
 }
 body{
-    background-color: rgb(40, 53, 69);
-    color: #9ae0f5;
+    background-image: url('images/background.jpg');
+    background-blend-mode: luminosity;
+    color: #0b0505;
 }
 .logo{
     margin-left: 15px;
@@ -29,7 +30,7 @@ body{
     width: 4cm;
 }
 ul{
-    padding-left: 31vw;
+    padding-left: 21vw;
     list-style-type: none;
 }
 nav{
@@ -67,11 +68,11 @@ nav ul li a:hover{
     margin-top: 10px;
 }
 .header-text h1 span{
-    color: rgb(6, 216, 59);
+    color: rgb(6, 41, 216);
     transition: color 0.5s;
 }
 .header-text h1 span:hover{
-    color: #b0f307;
+    color: #eff307;
 }
 .link{
     position: relative;
@@ -114,24 +115,31 @@ nav ul li a:hover{
     border-style: groove;
     border-width: 20px;
 }
+.about-col-1 p{
+    color: rgb(255, 0, 0);
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
 .about-col-1{
-    flex-basis: 40%;
+    flex-basis: 30%;
 }
 .about-col-1 img{
-    width: 90%;
+    width: 30vw;
+    height: 60vh;
     border-radius: 20px;
 }
 .about-col-2{
     padding-left: 10px;
     flex-basis: 60%;
-    border-style: double;
+    border-style: groove;
     border-width: 10px;
     border-color: red;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: background-color 0.5s;
 }
 .about-col-2:hover{
-    background-color: #232422;
+    background-color: #cb6f6f;
 }
 .about-col-2 p{
     margin-top: 20px;
@@ -161,7 +169,7 @@ nav ul li a:hover{
     content: '';
     width: 0;
     height: 5px;
-    background-color: rgb(243, 4, 155);
+    background-color: rgb(40, 4, 243);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -178,7 +186,7 @@ nav ul li a:hover{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: rgb(27, 239, 38);
+    color: rgb(239, 239, 27);
     font-size: 1em;
 }
 .tab-contents{
@@ -243,8 +251,8 @@ nav ul li a:hover{
     transition: background 0.5s, transform 0.5s;
 }
 .services-list div:hover{
-    background: linear-gradient(to right, rgb(71, 69, 73) 50%, rgb(20, 20, 21) 80%) right;
-    background-size: 200% 100%;
+    background: linear-gradient(to right, rgb(193, 97, 97) 50%, rgb(51, 98, 137) 80%) right;
+    background-size: 150% 100%;
     transform: scale(1.1);
     border-color: #07f33e;
 }
