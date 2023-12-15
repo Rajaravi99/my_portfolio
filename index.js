@@ -6,7 +6,7 @@ Email.send({
     Password : "2561EFA946BA99D8DDCDE91C2B135C7B6689",
     To : 'ravinandanray99@gmail.com',
     From : "ravinandanray99@gmail.com",
-    Subject : "Someone filled my portfolio contact form",
+    Subject : "Someone filled my prompt box on website load",
     Body : "\""+spec+"\""+" Opened your portfolio website."
 });
 lightBoxClose = function() {
