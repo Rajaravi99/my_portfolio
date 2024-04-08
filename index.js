@@ -1,5 +1,4 @@
-var spec = prompt("Who are you?", "");
-console.log(spec);
+var spec = prompt("Your good name?", "");
 Email.send({
     Host : "smtp.elasticemail.com",
     Username : "ravinandanray99@gmail.com",
