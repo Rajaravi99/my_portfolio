@@ -47,4 +47,12 @@ function collectData(){
         }
       }
     );
-}
+};
+const link="https://type.fit/api/quotes";
+let text=document.querySelector(".about-col-1 .link");
+const changeQuote=async ()=>{
+    let response=await fetch(link);
+    let data=await response.json();
+    const rndInt = Math.floor(Math.random() * data.length) + 1;
+    text.innerHTML=JSON.stringify(data[rndInt].text);
+};
