@@ -109,11 +109,12 @@ nav ul li a:hover{
     padding: 5vw;
 }
 .about-col-1 img{
-    width: 90vw;
-    height: 75vh;
+    width: 30vw;
+    height: 60vh;
     border: #f32a07;
     border-style: groove;
-    border-width: 20px;
+    border-radius: 10px;
+    border-width: 10px;
 }
 .about-col-1 p{
     color: rgb(255, 0, 0);
@@ -123,11 +124,6 @@ nav ul li a:hover{
 }
 .about-col-1{
     flex-basis: 30%;
-}
-.about-col-1 img{
-    width: 30vw;
-    height: 60vh;
-    border-radius: 20px;
 }
 .about-col-1 button{
     align-items: center;
@@ -139,18 +135,19 @@ nav ul li a:hover{
 }
 .about-col-2{
     padding-left: 10px;
-    flex-basis: 60%;
+    flex-basis: 65%;
     border-style: groove;
     border-width: 10px;
     border-color: red;
     border-radius: 10px;
-    transition: background-color 0.5s;
-}
-.about-col-2:hover{
-    background-color: #cb6f6f;
+    transition: background-color 1s;
 }
 .about-col-2 p{
+    color: #07f33e;
     margin-top: 20px;
+}
+.about-col-2:hover{
+    background-color: #7b0101;
 }
 .sub-title{
     font-size: 30px;
@@ -162,6 +159,9 @@ nav ul li a:hover{
     color: rgb(229, 255, 0);
     display: flex;
     margin: 20px 0 20px;
+}
+.tab-titles p{
+    color: yellow;
 }
 .tab-links{
     font-size: 50px;
@@ -187,15 +187,16 @@ nav ul li a:hover{
     width: 100%;
 }
 .tab-contents ul{
+    padding-top: 2vh;
     padding-left: 0;
+    color: #07f33e;
 }
-.tab-contentsul li{
+.tab-contents ul li{
     list-style: none;
-    margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: rgb(239, 239, 27);
-    font-size: 1em;
+    color: rgb(245, 245, 30);
+    font-size: 1.2em;
 }
 .tab-contents{
     display: none;

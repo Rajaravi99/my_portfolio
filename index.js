@@ -48,6 +48,7 @@ function collectData(){
       }
     );
 };
+// dynamic quote feature changes quote by pushing button
 const link="https://type.fit/api/quotes";
 let text=document.querySelector(".about-col-1 .link");
 const changeQuote=async ()=>{
@@ -56,3 +57,4 @@ const changeQuote=async ()=>{
     const rndInt = Math.floor(Math.random() * data.length) + 1;
     text.innerHTML=JSON.stringify(data[rndInt].text);
 };
+// 
