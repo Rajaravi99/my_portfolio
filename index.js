@@ -57,4 +57,8 @@ const changeQuote=async ()=>{
     const rndInt = Math.floor(Math.random() * data.length) + 1;
     text.innerHTML=JSON.stringify(data[rndInt].text);
 };
-// 
+// attaching blog page while the use clicks on blogs
+let doc=document.querySelector(".link #blogs");
+const goToBlogs=async ()=>{
+    window.location.href="./views/blogs.html";
+};

@@ -5,5 +5,5 @@ app.get('/',(req,res)=>{
     res.sendFile('./index.html',{root:__dirname});
 });
 app.use((req,res)=>{
-    req.sendFile('./views/404.html',{root:__dirname});
+    req.statusCode(404).sendFile('./views/404.html',{root:__dirname});
 });
