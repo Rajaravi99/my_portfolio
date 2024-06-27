@@ -60,5 +60,5 @@ const changeQuote=async ()=>{
 // attaching blog page while the use clicks on blogs
 let doc=document.querySelector(".link #blogs");
 const goToBlogs=async ()=>{
-    window.location.href="./views/blogs.html";
+    window.location.href='https://blogsite-r2mj.onrender.com';
 };
