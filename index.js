@@ -57,4 +57,3 @@ const changeQuote=async ()=>{
     const rndInt = Math.floor(Math.random() * data.length) + 1;
     text.innerHTML=JSON.stringify(data[rndInt].text);
 };
-// 
