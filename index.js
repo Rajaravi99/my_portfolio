@@ -57,3 +57,8 @@ const changeQuote=async ()=>{
     const rndInt = Math.floor(Math.random() * data.length) + 1;
     text.innerHTML=JSON.stringify(data[rndInt].text);
 };
+
+let doc=document.querySelector(".link #blogs");
+const goToBlogs=async ()=>{
+    window.location.href='https://blogsite-r2mj.onrender.com';
+};
