@@ -61,5 +61,6 @@ let doc=document.querySelector(".link #blogs");
 const goToBlogs=async ()=>{
     window.location.href='https://blogsite-r2mj.onrender.com';
 };
+// will add something
 
 
