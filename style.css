@@ -20,9 +20,9 @@ html{
     letter-spacing: 2px;
 }
 body{
-    background-image: url('images/background.jpg');
+    background-image: url('images/402891.webp');
     background-blend-mode: luminosity;
-    color: #0b0505;
+    color: #ffffff;
 }
 .logo{
     margin-left: 15px;
@@ -68,7 +68,7 @@ nav ul li a:hover{
     margin-top: 10px;
 }
 .header-text h1 span{
-    color: rgb(6, 41, 216);
+    color: rgb(216, 6, 6);
     transition: color 0.5s;
 }
 .header-text h1 span:hover{
@@ -140,11 +140,8 @@ nav ul li a:hover{
     border-width: 10px;
     border-color: red;
     border-radius: 10px;
+    color: #ff01d0;
     transition: background-color 1s;
-}
-.about-col-2 p{
-    color: #07f33e;
-    margin-top: 20px;
 }
 .about-col-2:hover{
     background-color: #7b0101;
@@ -189,7 +186,7 @@ nav ul li a:hover{
 .tab-contents ul{
     padding-top: 2vh;
     padding-left: 0;
-    color: #07f33e;
+    color: #fb06ff;
 }
 .tab-contents ul li{
     list-style: none;

@@ -51,10 +51,15 @@ function collectData(){
 const link="https://type.fit/api/quotes";
 let text=document.querySelector(".about-col-1 .link");
 const changeQuote=async ()=>{
-    let response=await fetch(link);
-    let data=await response.json();
-    const rndInt = Math.floor(Math.random() * data.length) + 1;
-    text.innerHTML=JSON.stringify(data[rndInt].text);
+    let response=await fetch(link,{mode: 'no-cors'});
+    if(!response.ok) {
+        alert('error while calling api');
+    }
+    else{
+        const json = await response.json();
+        const rndInt = Math.floor(Math.random() * data.length) + 1;
+        text.innerHTML=JSON.stringify(data[rndInt].text);
+    }
 };
 // attaching blog page while the use clicks on blogs
 let doc=document.querySelector(".link #blogs");
@@ -62,5 +67,6 @@ const goToBlogs=async ()=>{
     window.location.href='https://blogsite-r2mj.onrender.com';
 };
 // will add something
+
 
 
