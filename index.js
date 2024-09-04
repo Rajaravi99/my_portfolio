@@ -48,11 +48,12 @@ function collectData(){
       }
     );
 };
-const link="https://type.fit/api/quotes";
-let text=document.querySelector(".about-col-1 .link");
 const changeQuote=async ()=>{
-    let response=await fetch(link,{mode: 'no-cors'});
+    const link="https://api.api-ninjas.com/v1/quotes?category=happiness";
+    let text=document.querySelector(".about-col-1 .link");
+    let response=await fetch(link,{mode:'no-cors'});
     if(!response.ok) {
+        console.log(response.body);
         alert('error while calling api');
     }
     else{
