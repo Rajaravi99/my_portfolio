@@ -20,9 +20,7 @@ html{
     letter-spacing: 2px;
 }
 body{
-    background-image: url('images/402891.webp');
-    background-blend-mode: luminosity;
-    color: #ffffff;
+    background-image: url('images/background.gif');
 }
 .logo{
     margin-left: 15px;
@@ -62,13 +60,15 @@ nav ul li a:hover{
 .header-text{
     font-size: 30px;
     margin: 5px;
+    color: white;
 }
 .header-text h1{
     font-size: 40px;
     margin-top: 10px;
+    color: white;
 }
 .header-text h1 span{
-    color: rgb(216, 6, 6);
+    color: rgb(255, 251, 0);
     transition: color 0.5s;
 }
 .header-text h1 span:hover{
@@ -93,6 +93,21 @@ nav ul li a:hover{
     left: 0;
     background: #f04208;
 }
+/* info styles */
+.info{
+    width: auto;
+    font-size: larger;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    transition: 1s;
+
+}
+.info:hover{
+    color: red;
+    transform: scale(1.2);
+    background-color: #d4f307;
+}
 /* about */
 #about.row{
     height: 20vh;
@@ -111,13 +126,13 @@ nav ul li a:hover{
 .about-col-1 img{
     width: 30vw;
     height: 60vh;
-    border: #f32a07;
+    border: #ffffff;
     border-style: groove;
     border-radius: 10px;
     border-width: 10px;
 }
 .about-col-1 p{
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 2em;
     font-weight: bold;
     font-family: 'Playfair Display', serif;
@@ -138,13 +153,13 @@ nav ul li a:hover{
     flex-basis: 65%;
     border-style: groove;
     border-width: 10px;
-    border-color: red;
+    border-color: rgb(255, 255, 255);
     border-radius: 10px;
-    color: #ff01d0;
+    color: #ffffff;
     transition: background-color 1s;
 }
 .about-col-2:hover{
-    background-color: #7b0101;
+    background-color: #e53030;
 }
 .sub-title{
     font-size: 30px;
@@ -186,7 +201,7 @@ nav ul li a:hover{
 .tab-contents ul{
     padding-top: 2vh;
     padding-left: 0;
-    color: #fb06ff;
+    color: #ffffff;
 }
 .tab-contents ul li{
     list-style: none;
@@ -247,12 +262,13 @@ nav ul li a:hover{
 .services-list ul{
     padding-left: 20px;
     list-style-type: circle;
+    color: white;
 }
 .services-list div{
     padding: 40px;
     border-style: ridge;
     border-width: 10px;
-    border-color: red;
+    border-color: rgb(255, 255, 255);
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
@@ -291,7 +307,7 @@ nav ul li a:hover{
     overflow: hidden;
     border-style: ridge;
     border-width: 10px;
-    border-color: rgb(235, 31, 31);
+    border-color: rgb(255, 255, 255);
     border-radius: 10px;
     transition: transform 0.5s, border-color 0.5s;
 }
@@ -302,7 +318,7 @@ nav ul li a:hover{
 .work h2{
     text-align: center;
     font-size: 20px;
-    background: rgb(198, 28, 56);
+    background: rgb(235, 29, 63);
 }
 .work img{
     width: 100%;
@@ -342,7 +358,7 @@ nav ul li a:hover{
     margin-bottom: 20px;
 }
 .work:hover .layer{
-    background: linear-gradient(rgba(0,0,0,0.8), rgb(243, 36, 70));
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgb(243, 36, 70));
     height: 100%;
 }
 
@@ -350,6 +366,7 @@ nav ul li a:hover{
 .contact-left{
     padding-left: 5vw;
     flex-basis: 35%;
+    color: white;
 }
 .contact-right{
     flex-basis: 55%;
@@ -410,7 +427,7 @@ form textarea:hover{
     color: yellow;
 }
 .btn2{
-    background: rgb(61, 18, 18);
+    background: rgb(102, 35, 35);
 }
 .btn{
     color: red;
@@ -456,7 +473,7 @@ form textarea:hover{
     padding: 1em;
 }
 .closeLB {
-    color: rgb(15, 14, 14);
+    color: rgb(255, 255, 255);
     cursor: pointer;
     font-size: 30px;
     transition: color 0.5s;
