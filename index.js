@@ -1,13 +1,3 @@
-var spec = prompt("Your good name?", "");
-Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "ravinandanray99@gmail.com",
-    Password : "2561EFA946BA99D8DDCDE91C2B135C7B6689",
-    To : 'ravinandanray99@gmail.com',
-    From : "ravinandanray99@gmail.com",
-    Subject : "Someone filled my prompt box on website load",
-    Body : "\""+spec+"\""+" Opened your portfolio website."
-});
 lightBoxClose = function() {
     document.querySelector(".lightbox").classList.add("closed");
 }
@@ -67,7 +57,7 @@ let doc=document.querySelector(".link #blogs");
 const goToBlogs=async ()=>{
     window.location.href='https://blogsite-r2mj.onrender.com';
 };
-// will add something
+
 
 
 

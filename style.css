@@ -165,15 +165,15 @@ nav ul li a:hover{
     font-size: 30px;
     font-weight: 600;
     text-align: center;
-    color: rgb(237, 237, 11);
+    color: rgb(221, 255, 0);
 }
 .tab-titles{
-    color: rgb(229, 255, 0);
+    color: rgb(85, 255, 0);
     display: flex;
     margin: 20px 0 20px;
 }
 .tab-titles p{
-    color: yellow;
+    color: rgb(217, 255, 0);
 }
 .tab-links{
     font-size: 50px;
