@@ -10,14 +10,14 @@ html{
 /* navigation bar and header */
 #header{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: 3vh 0;
+    margin: 3vh 6vw;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
-    letter-spacing: 2px;
 }
 body{
     background-image: url('images/background.gif');
@@ -28,7 +28,7 @@ body{
     width: 4cm;
 }
 ul{
-    padding-left: 21vw;
+    padding-left: 2vw;
     list-style-type: none;
 }
 nav{
@@ -130,6 +130,12 @@ nav ul li a:hover{
     border-style: groove;
     border-radius: 10px;
     border-width: 10px;
+    filter: blur(1px);
+    transition: 0.5s;
+}
+.about-col-1 img:hover{
+    filter: none;
+    transform: scale(0.9);
 }
 .about-col-1 p{
     color: rgb(255, 255, 255);
@@ -157,9 +163,11 @@ nav ul li a:hover{
     border-radius: 10px;
     color: #ffffff;
     transition: background-color 1s;
+    filter: blur(1px);
 }
 .about-col-2:hover{
     background-color: #e53030;
+    filter: none;
 }
 .sub-title{
     font-size: 30px;
@@ -271,21 +279,25 @@ nav ul li a:hover{
     border-color: rgb(255, 255, 255);
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+    filter: blur(1px);
 }
 .services-list div:hover{
     background: linear-gradient(to right, rgb(193, 97, 97) 50%, rgb(51, 98, 137) 80%) right;
     background-size: 150% 100%;
     transform: scale(1.1);
     border-color: #07f33e;
+    filter: none;
 }
 .services-list div a{
     margin-left: 2vw;
     color: red;
     font-size: 20px;
     transition: color 0.5s;
+    filter: blur(1px);
 }
 .services-list div a:hover{
     color: yellow;
+    filter: none;
 }
 /* My profile */
 .portfolio{
@@ -310,10 +322,12 @@ nav ul li a:hover{
     border-color: rgb(255, 255, 255);
     border-radius: 10px;
     transition: transform 0.5s, border-color 0.5s;
+    filter: blur(1px);
 }
 .work:hover{
     border-color: #07f33e;
     transform: scale(1.2);
+    filter: none;
 }
 .work h2{
     text-align: center;
