@@ -57,6 +57,13 @@ let doc=document.querySelector(".link #blogs");
 const goToBlogs=async ()=>{
     window.location.href='https://blogsite-r2mj.onrender.com';
 };
+// making various events
+const tag=document.querySelector('body');
+addEventListener("click", (event) => {
+    const audio=new Audio();
+    audio.src='./images/mouseClick.mp3';
+    event.target=audio.play();
+},true);
 
 
 
