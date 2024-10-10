@@ -64,17 +64,7 @@ tag.addEventListener("click", (event) => {
     audio.src='./images/mouseClick.mp3';
     event.target=audio.play();
 },true);
-// let flag=false;
-// addEventListener('scroll',(event)=>{
-//     const audio=new Audio();
-//     audio.src='./images/scrollSound.mp3';
-//     event.target=audio.play();
-//     if(!flag){
-//         alert('Do not panic, the sound is from the webpage scroll event');
-//         flag=true;
-//     }
-//     event.stopPropagation();
-// },true);
+
 
 
 
