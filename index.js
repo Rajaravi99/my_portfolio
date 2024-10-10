@@ -65,6 +65,23 @@ addEventListener("click", (event) => {
     event.target=audio.play();
 },true);
 
+// creating cursor follower
+ let myDiv = document.querySelector("#my-div");
+//For mouse
+document.addEventListener("mousemove", (e) => {
+    let x = e.pageX;
+    let y = e.pageY;
+    myDiv.style.left = x - 20 + "px";
+    myDiv.style.top = y - 20 + "px";
+});
+//For touch
+document.addEventListener("touchmove", (e) => {
+    let x = e.pageX;
+    let y = e.pageY;
+    myDiv.style.left = x - 20 + "px";
+    myDiv.style.top = y - 20 + "px";
+});
+
 
 
 
