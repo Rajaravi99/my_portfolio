@@ -58,12 +58,12 @@ const goToBlogs=async ()=>{
     window.location.href='https://blogsite-r2mj.onrender.com';
 };
 // making various events
-// const tag=document.querySelector('body');
-// tag.addEventListener("click", (event) => {
-//     const audio=new Audio();
-//     audio.src='./images/mouseClick.mp3';
-//     event.target=audio.play();
-// },true);
+const tag=document.querySelector('body');
+tag.addEventListener("click", (event) => {
+    const audio=new Audio();
+    audio.src='./images/mouseClick.mp3';
+    event.target=audio.play();
+},true);
 
 let myDiv=document.querySelector('#my-div');
 document.addEventListener('mousemove',(event)=>{
