@@ -39,18 +39,20 @@ function collectData(){
     );
 };
 const changeQuote=async ()=>{
-    const link="https://api.api-ninjas.com/v1/quotes?category=happiness";
+    let data=[
+        'The greatest glory in living lies not in never falling, but in rising every time we fall',
+        'The way to get started is to quit talking and begin doing',
+        'Make it quick make it fast, make it work',
+        'Programming isn’t about what you know; it’s about what you can figure out',
+        'Code is read much more often than it is written',
+        'You might not think that programmers are artists, but programming is an extremely creative profession. It’s logic-based creativity',
+        'Every great developer you know got there by solving problems they were unqualified to solve until they actually did it',
+        'Code is like humor. When you have to explain it, it’s bad',
+    ];
     let text=document.querySelector(".about-col-1 .link");
-    let response=await fetch(link,{mode:'no-cors'});
-    if(!response.ok) {
-        console.log(response.body);
-        alert('error while calling api');
-    }
-    else{
-        const json = await response.json();
-        const rndInt = Math.floor(Math.random() * data.length) + 1;
-        text.innerHTML=JSON.stringify(data[rndInt].text);
-    }
+    const rndInt = Math.floor(Math.random() * data.length);
+    console.log(rndInt);
+    text.innerHTML=(data[rndInt]);
 };
 // attaching blog page while the use clicks on blogs
 let doc=document.querySelector(".link #blogs");
@@ -64,17 +66,15 @@ tag.addEventListener("click", (event) => {
     audio.src='./images/mouseClick.mp3';
     event.target=audio.play();
 },true);
-// let flag=false;
-// addEventListener('scroll',(event)=>{
-//     const audio=new Audio();
-//     audio.src='./images/scrollSound.mp3';
-//     event.target=audio.play();
-//     if(!flag){
-//         alert('Do not panic, the sound is from the webpage scroll event');
-//         flag=true;
-//     }
-//     event.stopPropagation();
-// },true);
+
+// let myDiv=document.querySelector('#my-div');
+// document.addEventListener('mousemove',(event)=>{
+//     let x=event.pageX;
+//     let y=event.pageY;
+//     myDiv.style.left=x-20+'px';
+//     myDiv.style.top=y-20+'px';
+// });
+
 
 // creating cursor follower
  let myDiv = document.querySelector("#my-div");

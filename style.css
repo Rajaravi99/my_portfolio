@@ -554,10 +554,11 @@ form textarea:hover{
     animation: 0.6s ease-out 0s 1 popup;
     padding: 40px;
 }
-#my-div {
-    width: 2em;
-    height: 2em;
-    background-color: #33fff8;
+
+#my-div{
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #ffffff;
     position: absolute;
     transform: translate(-50%, -50%);
     border-radius: 50%;
@@ -565,6 +566,7 @@ form textarea:hover{
     transition: 0.1s ease-out;
     opacity: 0.5;
 }
+
 /* css for small screen */
 @media only screen and (max-width: 630px){
 
