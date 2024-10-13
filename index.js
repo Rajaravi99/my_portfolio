@@ -82,15 +82,15 @@ tag.addEventListener("click", (event) => {
 document.addEventListener("mousemove", (e) => {
     let x = e.pageX;
     let y = e.pageY;
-    myDiv.style.left = x - 20 + "px";
-    myDiv.style.top = y - 20 + "px";
+    myDiv.style.left = x + "px";
+    myDiv.style.top = y + "px";
 });
 //For touch
 document.addEventListener("touchmove", (e) => {
     let x = e.pageX;
     let y = e.pageY;
-    myDiv.style.left = x - 20 + "px";
-    myDiv.style.top = y - 20 + "px";
+    myDiv.style.left = x + "px";
+    myDiv.style.top = y + "px";
 });
 
 
