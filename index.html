@@ -45,7 +45,7 @@
             <div class="row">
                 <div class="about-col-1">
                     <img src="images/myImage.jpg" alt="">
-                    <p class="link">"Make it work, make it right, make it fast"</p>
+                    <p class="link" aria-autocomplete="both">"Make it work, make it right, make it fast"</p>
                     <button onclick="changeQuote()">Another Quote</button>
                 </div>
                 <div class="about-col-2">
@@ -260,9 +260,9 @@
                 <div class="contact-right">
                     <h1 class="title link">Any Message For Me?</h1>
                     <form onsubmit="collectData(); reset(); return false;">
-                        <input type="text" id="Name" placeholder="Your Name" required>
-                        <input type="text" id="Email" placeholder="Your Email" required>
-                        <input type="number" id="Number" placeholder="Your Contact Number" required>
+                        <input type="text" id="Name" placeholder="Your Name" autocomplete="on" required>
+                        <input type="text" id="Email" placeholder="Your Email" autocomplete="on" required>
+                        <input type="number" id="Number" placeholder="Your Contact Number" autocomplete="on" required>
                         <textarea id="Message" rows="6" placeholder="Your Message"></textarea>
                         <button id="formData" type="submit" class="btn btn2">Submit</button>
                     </form>
