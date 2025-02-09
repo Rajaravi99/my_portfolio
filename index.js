@@ -49,10 +49,8 @@ const changeQuote=async ()=>{
         'Every great developer you know got there by solving problems they were unqualified to solve until they actually did it',
         'Code is like humor. When you have to explain it, it’s bad',
     ];
-    console.log('reached');
     let text=document.querySelector(".about-col-1 .link");
     const rndInt = Math.floor(Math.random() * data.length);
-    console.log(rndInt);
     text.innerHTML=(data[rndInt]);
 };
 // attaching blog page while the use clicks on blogs
