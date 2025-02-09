@@ -39,6 +39,7 @@ function collectData(){
     );
 };
 const changeQuote=async ()=>{
+    console.log('reached');
     let data=[
         'The greatest glory in living lies not in never falling, but in rising every time we fall',
         'The way to get started is to quit talking and begin doing',
@@ -47,7 +48,7 @@ const changeQuote=async ()=>{
         'Code is read much more often than it is written',
         'You might not think that programmers are artists, but programming is an extremely creative profession. It’s logic-based creativity',
         'Every great developer you know got there by solving problems they were unqualified to solve until they actually did it',
-        'Code is like humor. When you have to explain it, it’s bad',
+        'Code is like humor. When you have to explain it, it’s bad'
     ];
     let text=document.querySelector(".about-col-1 .link");
     const rndInt = Math.floor(Math.random() * data.length);
@@ -56,9 +57,7 @@ const changeQuote=async ()=>{
 };
 // attaching blog page while the use clicks on blogs
 let doc=document.querySelector(".link #blogs");
-const goToBlogs=async ()=>{
-    window.location.href='https://blogsite-r2mj.onrender.com';
-};
+const goToBlogs=async ()=>{window.location.href='https://blogsite-r2mj.onrender.com';};
 // making various events
 const tag=document.querySelector('body');
 tag.addEventListener("click", (event) => {

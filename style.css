@@ -20,7 +20,8 @@ html{
     font-size: 1em;
 }
 body{
-    background-image: url('images/background.gif');
+    /* background-image: url('images/background.gif'); */
+    background-color: #000;
 }
 .logo{
     margin-left: 15px;
@@ -170,7 +171,7 @@ nav ul li a:hover{
     filter: none;
 }
 .sub-title{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
     text-align: center;
     color: rgb(221, 255, 0);
@@ -242,6 +243,14 @@ nav ul li a:hover{
     width: 35%;
     left: 0;
     background: #f04208;
+}
+/* experience */
+.date-format{
+    font-size: 1.3vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    
 }
 /* My Projects */
 .container h1{
@@ -556,8 +565,8 @@ form textarea:hover{
 }
 
 #my-div{
-    width: 1.5em;
-    height: 1.5em;
+    width: 1em;
+    height: 1em;
     background-color: #ffffff;
     position: absolute;
     transform: translate(-50%, -50%);
